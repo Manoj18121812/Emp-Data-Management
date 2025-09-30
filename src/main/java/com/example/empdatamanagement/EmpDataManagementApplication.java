@@ -1,4 +1,4 @@
-package com.example.Emp_Data_Management;
+package com.example.empdatamanagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
