@@ -21,7 +21,7 @@ public class EmployeeController {
     public String redirectEmployees() {
         return "redirect:/";
     }
-    // ✅ Home → show employee list
+
     @GetMapping("/")
     public String viewEmployees(@RequestParam(required = false) String keyword, Model model) {
         List<Employee> employees = (keyword == null || keyword.isEmpty())
@@ -30,17 +30,17 @@ public class EmployeeController {
 
         model.addAttribute("employees", employees);
         model.addAttribute("keyword", keyword);
-        return "employee-list"; // employee-list.html
+        return "employee-list";
     }
 
-    // ✅ Show form for new employee
+
     @GetMapping("/employees/new")
     public String showForm(Model model) {
         model.addAttribute("employee", new Employee());
-        return "employee-form"; // employee-form.html
+        return "employee-form";
     }
 
-    // ✅ Save employee (Add/Edit)
+
     @PostMapping("/employees")
     public String save(@ModelAttribute("employee") @Valid Employee employee,
                        BindingResult result) {
@@ -48,20 +48,20 @@ public class EmployeeController {
             return "employee-form";
         }
         service.save(employee);
-        return "redirect:/";  // ✅ Redirect back to home
+        return "redirect:/";
     }
 
-    // ✅ Edit employee
+
     @GetMapping("/employees/edit/{id}")
     public String edit(@PathVariable Long id, Model model) {
         model.addAttribute("employee", service.get(id));
         return "employee-form";
     }
 
-    // ✅ Delete employee
+
     @GetMapping("/employees/delete/{id}")
     public String delete(@PathVariable Long id) {
         service.delete(id);
-        return "redirect:/";  // ✅ Redirect back to home
+        return "redirect:/";
     }
 }
