@@ -1,6 +1,6 @@
 package com.example.empdatamanagement.service;
 
-import com.example.empdatamanagement.entity.Employee;              // ✅ keep this one
+import com.example.empdatamanagement.entity.Employee;
 import com.example.empdatamanagement.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
