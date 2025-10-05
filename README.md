@@ -1,6 +1,10 @@
 # Employee Management System
 
-A **Spring Boot + Thymeleaf** web application to manage employee records with features like **Add, Edit, Delete, and Search**.
+A **Spring Boot + Thymeleaf** web application to manage employee records with features like **Add, Edit, Delete, and Search**.  
+
+🌐 **Live Demo:** [Access on AWS EC2](http://44.220.142.36:8080/)
+
+---
 
 ## Features
 
@@ -9,7 +13,17 @@ A **Spring Boot + Thymeleaf** web application to manage employee records with fe
 - Edit existing employee
 - Delete employee
 - Search employees by **name, email, or position**
-- Responsive UI with Bootstrap 5
+- Responsive UI with **Bootstrap 5**
+- Deployed and accessible online on **AWS EC2**
+
+---
+
+## Tech Stack
+
+- **Backend:** Java, Spring Boot, Spring Data JPA  
+- **Frontend:** Thymeleaf, Bootstrap 5  
+- **Database:** H2 (default) / MySQL  
+- **Deployment:** AWS EC2  
 
 ---
 
@@ -28,4 +42,4 @@ A **Spring Boot + Thymeleaf** web application to manage employee records with fe
 
 ```bash
 git clone https://github.com/manoj1812/Emp-Data-Management.git
-cd employee-management
+cd Emp-Data-Management
