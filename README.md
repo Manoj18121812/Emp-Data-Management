@@ -16,7 +16,7 @@ A **Spring Boot + Thymeleaf** web application to manage employee records with fe
 - Responsive UI with **Bootstrap 5**
 - Deployed and accessible online on **AWS EC2**
 
----
+--- 
 
 ## Tech Stack
 
